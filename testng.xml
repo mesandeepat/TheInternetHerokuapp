@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelTestSuite" parallel="tests" thread-count="6">
+
+  <test name="ChromeTest">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting"/>
+    </classes>
+  </test> 
+  
+  <test name="FirefoxTest">
+  	<parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass"/>
+      <class name="com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting"/>
+    </classes>
+  </test> 
+  
+</suite> 
