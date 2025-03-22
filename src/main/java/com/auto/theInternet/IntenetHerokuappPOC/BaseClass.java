@@ -19,7 +19,7 @@ public class BaseClass {
 
     @BeforeMethod
     @Parameters({"browser"})
-    public void setup(@Optional("firefox") String browser) {
+    public void setup(@Optional("chrome") String browser) {
         logger.info("Initializing browser: " + browser);
 
         if (browser.equalsIgnoreCase("chrome")) {

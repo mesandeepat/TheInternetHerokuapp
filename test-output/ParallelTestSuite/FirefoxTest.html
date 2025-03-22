@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FirefoxTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 21 14:15:30 GST 2025</td>
+<td>Started on:</td><td>Sat Mar 22 20:16:24 GST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>325 seconds (325900 ms)</td>
+<tr><td>Total time:</td><td>246 seconds (246890 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,66 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass.validatingDragAndDrop()'><b>validatingDragAndDrop</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</td>
-<td><div><pre>java.lang.AssertionError: expected [B] but found [A]
-	at com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass.validatingDragAndDrop(DragAndDropTestClass.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace313944118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace313944118'><pre>java.lang.AssertionError: expected [B] but found [A]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass.validatingDragAndDrop(DragAndDropTestClass.java:20)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+<td title='com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload()'><b>validateFileDownload</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .example a:nth-of-type(3)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [13f432d4-8f08-4093-ab9e-eaa65d9043df, findElement {using=css selector, value=.example a:nth-of-type(3)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 47411, moz:profile: /var/folders/6n/54r6dxdd3l3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 13f432d4-8f08-4093-ab9e-eaa65d9043df
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageClasses.FileDownloadPageClass.validateFileDownload(FileDownloadPageClass.java:48)
+	at com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload(FileDownloadTestClass.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1559526301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1559526301'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: .example a:nth-of-type(3)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [13f432d4-8f08-4093-ab9e-eaa65d9043df, findElement {using=css selector, value=.example a:nth-of-type(3)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 47411, moz:profile: /var/folders/6n/54r6dxdd3l3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 13f432d4-8f08-4093-ab9e-eaa65d9043df
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageClasses.FileDownloadPageClass.validateFileDownload(FileDownloadPageClass.java:48)
+	at com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload(FileDownloadTestClass.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
@@ -105,82 +144,19 @@ function toggleAllBoxes() {
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at org.testng.TestRunner.privateRun(TestRunner.java:848)
 	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
 	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass@2364305a</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass.BasicAuth()'><b>BasicAuth</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: Unexpected promptUserAndPass dialog detected. Performed handler &quot;dismiss&quot;. Dialog text: This site is asking you to sign in.: This site is asking you to sign in.
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a96d8324-3a76-4425-a2eb-5ea3959aedd0, get {url=http://admin:admin@the-internet.herokuapp.com/basic_auth}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0, moz:accessibilityChecks: false, moz:buildID: 20250227124745, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 14259, moz:profile: /var/folders/6n/54r6dxdd3l3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: a96d8324-3a76-4425-a2eb-5ea3959aedd0
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
-	at com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass.BasicAuth(BasicAuthTestClass.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace827306245", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace827306245'><pre>org.openqa.selenium.UnhandledAlertException: Unexpected promptUserAndPass dialog detected. Performed handler &quot;dismiss&quot;. Dialog text: This site is asking you to sign in.: This site is asking you to sign in.
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a96d8324-3a76-4425-a2eb-5ea3959aedd0, get {url=http://admin:admin@the-internet.herokuapp.com/basic_auth}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0, moz:accessibilityChecks: false, moz:buildID: 20250227124745, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 14259, moz:profile: /var/folders/6n/54r6dxdd3l3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
-Session ID: a96d8324-3a76-4425-a2eb-5ea3959aedd0
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:295)
-	at com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass.BasicAuth(BasicAuthTestClass.java:15)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass@69637b10</td></tr>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass@146587a2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -191,70 +167,75 @@ Session ID: a96d8324-3a76-4425-a2eb-5ea3959aedd0
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass.validateDynamicContentVariable()'><b>validateDynamicContentVariable</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</td>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass.validateChallengingDOM()'><b>validateChallengingDOM</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</td>
 <td></td>
-<td>13</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass@1bc715b8</td></tr>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass@517566b</td></tr>
 <tr>
 <td title='com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass.validateCheckboxes()'><b>validateCheckboxes</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</td>
 <td></td>
 <td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass@5536379e</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass@64b73e7a</td></tr>
 <tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass.validateChallengingDOM()'><b>validateChallengingDOM</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</td>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass.validatingDragAndDrop()'><b>validatingDragAndDrop</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</td>
 <td></td>
-<td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass@165b2f7f</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass.validateAddAndRemoveButtons()'><b>validateAddAndRemoveButtons</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</td>
-<td></td>
-<td>2</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass@350ec41e</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass.validateDisappearingElements()'><b>validateDisappearingElements</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</td>
-<td></td>
-<td>3</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass@6c8bca63</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass.validateDynamicLoading()'><b>validateDynamicLoading</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</td>
-<td></td>
-<td>11</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass@2b491fee</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass.validateEntryAd()'><b>validateEntryAd</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</td>
-<td></td>
-<td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass@3f1c5af9</td></tr>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass@12ed9db6</td></tr>
 <tr>
 <td title='com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass.validateContextMenu()'><b>validateContextMenu</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</td>
 <td></td>
 <td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass@277f7dd3</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass@530712d</td></tr>
 <tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass.validateDynamicControl()'><b>validateDynamicControl</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</td>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass.validateDynamicContentVariable()'><b>validateDynamicContentVariable</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</td>
 <td></td>
-<td>9</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass@292d1c71</td></tr>
+<td>12</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass@49cb9cb5</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass.validateDynamicLoading()'><b>validateDynamicLoading</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</td>
+<td></td>
+<td>12</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass@2b4c1d96</td></tr>
 <tr>
 <td title='com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass.validateStateOfImages()'><b>validateStateOfImages</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</td>
 <td></td>
 <td>2</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass@71984c3</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass@2f40e5db</td></tr>
 <tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass.validateDropDown()'><b>validateDropDown</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</td>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass.validateEntryAd()'><b>validateEntryAd</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</td>
 <td></td>
 <td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass@470a696f</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass@45fd9a4d</td></tr>
 <tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload()'><b>validateFileDownload</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</td>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass.validateAddAndRemoveButtons()'><b>validateAddAndRemoveButtons</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</td>
 <td></td>
-<td>11</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass@5ddabb18</td></tr>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass@e8df99a</td></tr>
 <tr>
 <td title='com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting.validateABTest()'><b>validateABTest</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</td>
 <td></td>
 <td>0</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting@3e8f7922</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting@5f0e9815</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass.validateDynamicControl()'><b>validateDynamicControl</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</td>
+<td></td>
+<td>8</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass@55322aab</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass.validateDisappearingElements()'><b>validateDisappearingElements</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</td>
+<td></td>
+<td>3</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass@2df6226d</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass.BasicAuth()'><b>BasicAuth</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass</td>
+<td></td>
+<td>2</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass@2dc995f4</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass.validateDropDown()'><b>validateDropDown</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</td>
+<td></td>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass@4ff4357f</td></tr>
 </table><p>
 </body>
 </html>

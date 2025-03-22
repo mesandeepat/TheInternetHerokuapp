@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ChromeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Mar 21 14:15:30 GST 2025</td>
+<td>Started on:</td><td>Sat Mar 22 20:16:24 GST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>225 seconds (225681 ms)</td>
+<tr><td>Total time:</td><td>176 seconds (176578 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,99 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload()'><b>validateFileDownload</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.example a:nth-of-type(3)&quot;}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b7b702ea69d552e33571a255d4262b0, findElement {using=css selector, value=.example a:nth-of-type(3)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/6n/54r6dxdd3l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61621/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b7b702ea69d552e33571a255d4262b0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageClasses.FileDownloadPageClass.validateFileDownload(FileDownloadPageClass.java:48)
+	at com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload(FileDownloadTestClass.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400511688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace400511688'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.example a:nth-of-type(3)&quot;}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b7b702ea69d552e33571a255d4262b0, findElement {using=css selector, value=.example a:nth-of-type(3)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/6n/54r6dxdd3l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61621/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b7b702ea69d552e33571a255d4262b0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageClasses.FileDownloadPageClass.validateFileDownload(FileDownloadPageClass.java:48)
+	at com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload(FileDownloadTestClass.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass@5d12a356</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,78 +171,73 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass.BasicAuth()'><b>BasicAuth</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass</td>
 <td></td>
-<td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass@47404bea</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass.validateDynamicLoading()'><b>validateDynamicLoading</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</td>
-<td></td>
-<td>12</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass@3234f74e</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting.validateABTest()'><b>validateABTest</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</td>
-<td></td>
 <td>0</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting@557a1e2d</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload()'><b>validateFileDownload</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</td>
-<td></td>
-<td>6</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass@40e10ff8</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass.validateChallengingDOM()'><b>validateChallengingDOM</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</td>
-<td></td>
-<td>3</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass@5d018107</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass.validateAddAndRemoveButtons()'><b>validateAddAndRemoveButtons</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</td>
-<td></td>
-<td>1</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass@6111ba37</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass.validateDynamicContentVariable()'><b>validateDynamicContentVariable</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</td>
-<td></td>
-<td>3</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass@269f4bad</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass.validateContextMenu()'><b>validateContextMenu</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</td>
-<td></td>
-<td>0</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass@29e6eb25</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass.validateCheckboxes()'><b>validateCheckboxes</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</td>
-<td></td>
-<td>0</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass@6cbcf243</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass.validateDynamicControl()'><b>validateDynamicControl</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</td>
-<td></td>
-<td>7</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass@5ed731d0</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass.validatingDragAndDrop()'><b>validatingDragAndDrop</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</td>
-<td></td>
-<td>0</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass@339bf286</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass.validateDropDown()'><b>validateDropDown</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</td>
-<td></td>
-<td>3</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass@38be305c</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass.validateEntryAd()'><b>validateEntryAd</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</td>
-<td></td>
-<td>3</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass@7bc10d84</td></tr>
-<tr>
-<td title='com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass.validateStateOfImages()'><b>validateStateOfImages</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</td>
-<td></td>
-<td>2</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass@305f7627</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass@53dbe163</td></tr>
 <tr>
 <td title='com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass.validateDisappearingElements()'><b>validateDisappearingElements</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</td>
 <td></td>
 <td>2</td>
-<td>com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass@62435e70</td></tr>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass@6d1ef78d</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass.validateDynamicContentVariable()'><b>validateDynamicContentVariable</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</td>
+<td></td>
+<td>4</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass@77d67cf3</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass.validateDropDown()'><b>validateDropDown</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</td>
+<td></td>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass@18a136ac</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass.validateStateOfImages()'><b>validateStateOfImages</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</td>
+<td></td>
+<td>2</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass@db57326</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass.validateDynamicControl()'><b>validateDynamicControl</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</td>
+<td></td>
+<td>7</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass@6dee4f1b</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass.validateCheckboxes()'><b>validateCheckboxes</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</td>
+<td></td>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass@4748a0f9</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass.validateContextMenu()'><b>validateContextMenu</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</td>
+<td></td>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass@4b14918a</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass.validatingDragAndDrop()'><b>validatingDragAndDrop</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</td>
+<td></td>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass@1a6c1270</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass.validateEntryAd()'><b>validateEntryAd</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</td>
+<td></td>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass@6ee6f53</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting.validateABTest()'><b>validateABTest</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</td>
+<td></td>
+<td>0</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting@134d26af</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass.validateDynamicLoading()'><b>validateDynamicLoading</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</td>
+<td></td>
+<td>12</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass@176b3f44</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass.validateAddAndRemoveButtons()'><b>validateAddAndRemoveButtons</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</td>
+<td></td>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass@1f3f02ee</td></tr>
+<tr>
+<td title='com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass.validateChallengingDOM()'><b>validateChallengingDOM</b><br>Test class: com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</td>
+<td></td>
+<td>1</td>
+<td>com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass@34a875b3</td></tr>
 </table><p>
 </body>
 </html>

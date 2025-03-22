@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-ParallelTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">ParallelTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-ParallelTestSuite" class="navigator-link ">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-ParallelTestSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-ParallelTestSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-ParallelTestSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-ParallelTestSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-ParallelTestSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-ParallelTestSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,175 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">30 methods, 2 failed,   28 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="hide-methods failed suite-ParallelTestSuite"> (hide)</a> <!-- hide-methods failed suite-ParallelTestSuite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="show-methods failed suite-ParallelTestSuite"> (show)</a> <!-- show-methods failed suite-ParallelTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-ParallelTestSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass" class="method navigator-link" hash-for-method="validateFileDownload">validateFileDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass" class="method navigator-link" hash-for-method="validateFileDownload">validateFileDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParallelTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="hide-methods passed suite-ParallelTestSuite"> (hide)</a> <!-- hide-methods passed suite-ParallelTestSuite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="show-methods passed suite-ParallelTestSuite"> (show)</a> <!-- show-methods passed suite-ParallelTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-ParallelTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass" class="method navigator-link" hash-for-method="validatingDragAndDrop">validatingDragAndDrop</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass" class="method navigator-link" hash-for-method="BasicAuth">BasicAuth</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass" class="method navigator-link" hash-for-method="BasicAuth">BasicAuth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting" class="method navigator-link" hash-for-method="validateABTest">validateABTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting" class="method navigator-link" hash-for-method="validateABTest">validateABTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass" class="method navigator-link" hash-for-method="validateAddAndRemoveButtons">validateAddAndRemoveButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass" class="method navigator-link" hash-for-method="validateAddAndRemoveButtons">validateAddAndRemoveButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass" class="method navigator-link" hash-for-method="validateChallengingDOM">validateChallengingDOM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass" class="method navigator-link" hash-for-method="validateChallengingDOM">validateChallengingDOM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass" class="method navigator-link" hash-for-method="validateCheckboxes">validateCheckboxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass" class="method navigator-link" hash-for-method="validateCheckboxes">validateCheckboxes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass" class="method navigator-link" hash-for-method="validateContextMenu">validateContextMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass" class="method navigator-link" hash-for-method="validateContextMenu">validateContextMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass" class="method navigator-link" hash-for-method="validateDisappearingElements">validateDisappearingElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass" class="method navigator-link" hash-for-method="validateDisappearingElements">validateDisappearingElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass" class="method navigator-link" hash-for-method="validateDropDown">validateDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass" class="method navigator-link" hash-for-method="validateDropDown">validateDropDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass" class="method navigator-link" hash-for-method="validateDynamicContentVariable">validateDynamicContentVariable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass" class="method navigator-link" hash-for-method="validateDynamicContentVariable">validateDynamicContentVariable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass" class="method navigator-link" hash-for-method="validateDynamicControl">validateDynamicControl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass" class="method navigator-link" hash-for-method="validateDynamicControl">validateDynamicControl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass" class="method navigator-link" hash-for-method="validateDynamicLoading">validateDynamicLoading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass" class="method navigator-link" hash-for-method="validateDynamicLoading">validateDynamicLoading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass" class="method navigator-link" hash-for-method="validateEntryAd">validateEntryAd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass" class="method navigator-link" hash-for-method="validateEntryAd">validateEntryAd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass" class="method navigator-link" hash-for-method="validateStateOfImages">validateStateOfImages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass" class="method navigator-link" hash-for-method="validateStateOfImages">validateStateOfImages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass" class="method navigator-link" hash-for-method="validatingDragAndDrop">validatingDragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass" class="method navigator-link" hash-for-method="validatingDragAndDrop">validatingDragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ParallelTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +271,379 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-ParallelTestSuite" class="panel ParallelTestSuite">
+          <div class="suite-ParallelTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileDownload">
+                  </a> <!-- validateFileDownload -->
+                  <span class="method-name">validateFileDownload</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.example a:nth-of-type(3)&quot;}
+  (Session info: chrome=134.0.6998.118)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9b7b702ea69d552e33571a255d4262b0, findElement {using=css selector, value=.example a:nth-of-type(3)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/6n/54r6dxdd3l3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61621}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61621/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9b7b702ea69d552e33571a255d4262b0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageClasses.FileDownloadPageClass.validateFileDownload(FileDownloadPageClass.java:48)
+	at com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload(FileDownloadTestClass.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFileDownload">
+                  </a> <!-- validateFileDownload -->
+                  <span class="method-name">validateFileDownload</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: .example a:nth-of-type(3)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.7.6&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [13f432d4-8f08-4093-ab9e-eaa65d9043df, findElement {using=css selector, value=.example a:nth-of-type(3)}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 136.0.2, moz:accessibilityChecks: false, moz:buildID: 20250317120031, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 47411, moz:profile: /var/folders/6n/54r6dxdd3l3..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 13f432d4-8f08-4093-ab9e-eaa65d9043df
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at PageClasses.FileDownloadPageClass.validateFileDownload(FileDownloadPageClass.java:48)
+	at com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass.validateFileDownload(FileDownloadTestClass.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-failed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateABTest">
+                  </a> <!-- validateABTest -->
+                  <span class="method-name">validateABTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateABTest">
+                  </a> <!-- validateABTest -->
+                  <span class="method-name">validateABTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BasicAuth">
+                  </a> <!-- BasicAuth -->
+                  <span class="method-name">BasicAuth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BasicAuth">
+                  </a> <!-- BasicAuth -->
+                  <span class="method-name">BasicAuth</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCheckboxes">
+                  </a> <!-- validateCheckboxes -->
+                  <span class="method-name">validateCheckboxes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCheckboxes">
+                  </a> <!-- validateCheckboxes -->
+                  <span class="method-name">validateCheckboxes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicControl">
+                  </a> <!-- validateDynamicControl -->
+                  <span class="method-name">validateDynamicControl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicControl">
+                  </a> <!-- validateDynamicControl -->
+                  <span class="method-name">validateDynamicControl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicContentVariable">
+                  </a> <!-- validateDynamicContentVariable -->
+                  <span class="method-name">validateDynamicContentVariable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicContentVariable">
+                  </a> <!-- validateDynamicContentVariable -->
+                  <span class="method-name">validateDynamicContentVariable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDropDown">
+                  </a> <!-- validateDropDown -->
+                  <span class="method-name">validateDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDropDown">
+                  </a> <!-- validateDropDown -->
+                  <span class="method-name">validateDropDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStateOfImages">
+                  </a> <!-- validateStateOfImages -->
+                  <span class="method-name">validateStateOfImages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateStateOfImages">
+                  </a> <!-- validateStateOfImages -->
+                  <span class="method-name">validateStateOfImages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicLoading">
+                  </a> <!-- validateDynamicLoading -->
+                  <span class="method-name">validateDynamicLoading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDynamicLoading">
+                  </a> <!-- validateDynamicLoading -->
+                  <span class="method-name">validateDynamicLoading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddAndRemoveButtons">
+                  </a> <!-- validateAddAndRemoveButtons -->
+                  <span class="method-name">validateAddAndRemoveButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddAndRemoveButtons">
+                  </a> <!-- validateAddAndRemoveButtons -->
+                  <span class="method-name">validateAddAndRemoveButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateChallengingDOM">
+                  </a> <!-- validateChallengingDOM -->
+                  <span class="method-name">validateChallengingDOM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateChallengingDOM">
+                  </a> <!-- validateChallengingDOM -->
+                  <span class="method-name">validateChallengingDOM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateContextMenu">
+                  </a> <!-- validateContextMenu -->
+                  <span class="method-name">validateContextMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateContextMenu">
+                  </a> <!-- validateContextMenu -->
+                  <span class="method-name">validateContextMenu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEntryAd">
+                  </a> <!-- validateEntryAd -->
+                  <span class="method-name">validateEntryAd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEntryAd">
+                  </a> <!-- validateEntryAd -->
+                  <span class="method-name">validateEntryAd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDisappearingElements">
+                  </a> <!-- validateDisappearingElements -->
+                  <span class="method-name">validateDisappearingElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDisappearingElements">
+                  </a> <!-- validateDisappearingElements -->
+                  <span class="method-name">validateDisappearingElements</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</span>
@@ -131,111 +656,775 @@
                   <span class="method-name">validatingDragAndDrop</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatingDragAndDrop">
+                  </a> <!-- validatingDragAndDrop -->
+                  <span class="method-name">validatingDragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+        </div> <!-- panel ParallelTestSuite -->
+        <div panel-name="test-xml-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/6n/54r6dxdd3l39f152mntwmqcw0000gn/T/testng-eclipse--492302022/testng-customsuite.xml</span>
+            <span class="header-content">/Users/sandeep/eclipse-workspace/UIAutomationFramework/TheInternet/IntenetHerokuappPOC/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;ParallelTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;validatingDragAndDrop&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass --&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass&quot;/&gt;
+      &lt;class name=&quot;com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+&lt;/suite&gt; &lt;!-- ParallelTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">ChromeTest (16 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (16 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_ParallelTestSuite');
+function tableData_ParallelTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(30);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validatingDragAndDrop')
-data.setCell(0, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass')
-data.setCell(0, 3, 617);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'validateDynamicLoading')
+data.setCell(0, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass')
+data.setCell(0, 3, 12985);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateDynamicLoading')
+data.setCell(1, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass')
+data.setCell(1, 3, 12332);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateDynamicContentVariable')
+data.setCell(2, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass')
+data.setCell(2, 3, 12187);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateDynamicControl')
+data.setCell(3, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass')
+data.setCell(3, 3, 8077);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateDynamicControl')
+data.setCell(4, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass')
+data.setCell(4, 3, 7904);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateDynamicContentVariable')
+data.setCell(5, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass')
+data.setCell(5, 3, 4913);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateDisappearingElements')
+data.setCell(6, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass')
+data.setCell(6, 3, 3246);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'BasicAuth')
+data.setCell(7, 2, 'com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass')
+data.setCell(7, 3, 2967);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateStateOfImages')
+data.setCell(8, 2, 'com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass')
+data.setCell(8, 3, 2959);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateStateOfImages')
+data.setCell(9, 2, 'com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass')
+data.setCell(9, 3, 2568);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateDisappearingElements')
+data.setCell(10, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass')
+data.setCell(10, 3, 2294);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateChallengingDOM')
+data.setCell(11, 2, 'com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass')
+data.setCell(11, 3, 1772);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateAddAndRemoveButtons')
+data.setCell(12, 2, 'com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass')
+data.setCell(12, 3, 1562);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateDropDown')
+data.setCell(13, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass')
+data.setCell(13, 3, 1394);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateEntryAd')
+data.setCell(14, 2, 'com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass')
+data.setCell(14, 3, 1344);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateContextMenu')
+data.setCell(15, 2, 'com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass')
+data.setCell(15, 3, 1319);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateEntryAd')
+data.setCell(16, 2, 'com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass')
+data.setCell(16, 3, 1278);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateDropDown')
+data.setCell(17, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass')
+data.setCell(17, 3, 1229);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateAddAndRemoveButtons')
+data.setCell(18, 2, 'com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass')
+data.setCell(18, 3, 1133);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validateChallengingDOM')
+data.setCell(19, 2, 'com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass')
+data.setCell(19, 3, 1094);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateCheckboxes')
+data.setCell(20, 2, 'com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass')
+data.setCell(20, 3, 1030);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateContextMenu')
+data.setCell(21, 2, 'com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass')
+data.setCell(21, 3, 828);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validateCheckboxes')
+data.setCell(22, 2, 'com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass')
+data.setCell(22, 3, 814);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'BasicAuth')
+data.setCell(23, 2, 'com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass')
+data.setCell(23, 3, 772);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validatingDragAndDrop')
+data.setCell(24, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass')
+data.setCell(24, 3, 764);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'validateFileDownload')
+data.setCell(25, 2, 'com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass')
+data.setCell(25, 3, 709);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'validateFileDownload')
+data.setCell(26, 2, 'com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass')
+data.setCell(26, 3, 707);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'validateABTest')
+data.setCell(27, 2, 'com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting')
+data.setCell(27, 3, 643);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'validatingDragAndDrop')
+data.setCell(28, 2, 'com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass')
+data.setCell(28, 3, 536);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'validateABTest')
+data.setCell(29, 2, 'com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting')
+data.setCell(29, 3, 486);
+window.suiteTableData['ParallelTestSuite']= { tableData: data, tableDiv: 'times-div-ParallelTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 617 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-ParallelTestSuite">
+              </div> <!-- times-div-ParallelTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateExitIntent</span>
+                <br/>
+                <span class="ignored-method-name">validateExitIntent</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setup(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validatingDragAndDrop</span>
-                <span class="method-start">12942 ms</span>
+                <span class="method-name">validateAddAndRemoveButtons</span>
+                <span class="method-start">17965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13568 ms</span>
+                <span class="method-start">19535 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">21023 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BasicAuth</span>
+                <span class="method-start">30466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33436 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">35990 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.AddRemoveElementsTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateAddAndRemoveButtons</span>
+                <span class="method-start">37460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38596 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.BasicAuthTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">38876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BasicAuth</span>
+                <span class="method-start">46306 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47082 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">47369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateStateOfImages</span>
+                <span class="method-start">49047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52010 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">validateStateOfImages</span>
+                <span class="method-start">53356 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">53997 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.BrokenImageTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55926 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">56188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateChallengingDOM</span>
+                <span class="method-start">63175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">64303 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">64691 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ChallengingDOMTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateChallengingDOM</span>
+                <span class="method-start">66476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68252 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">70241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCheckboxes</span>
+                <span class="method-start">73694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">74510 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">74749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateContextMenu</span>
+                <span class="method-start">81198 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">82029 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">82292 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.CheckboxesTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateCheckboxes</span>
+                <span class="method-start">82463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">83495 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">85794 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDisappearingElements</span>
+                <span class="method-start">88692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">90989 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">91241 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateContextMenu</span>
+                <span class="method-start">98388 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validatingDragAndDrop</span>
+                <span class="method-start">98617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99390 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ContextMenuTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">99709 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">99739 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">101920 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDropDown</span>
+                <span class="method-start">106322 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">107553 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">108025 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicContentVariable</span>
+                <span class="method-start">113322 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DisappearingElementsTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDisappearingElements</span>
+                <span class="method-start">113364 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">116613 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">118241 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">118499 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">118563 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicControl</span>
+                <span class="method-start">125347 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DragAndDropTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validatingDragAndDrop</span>
+                <span class="method-start">129581 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">130122 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">131505 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">133260 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">133566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicLoading</span>
+                <span class="method-start">139779 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DropDownTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDropDown</span>
+                <span class="method-start">144868 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">146263 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">147970 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">152765 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">153037 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicContentVariable</span>
+                <span class="method-start">158018 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEntryAd</span>
+                <span class="method-start">159378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">160723 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">160947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateFileDownload</span>
+                <span class="method-start">168067 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">168780 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">169028 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicContentTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">170208 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">172190 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateABTest</span>
+                <span class="method-start">175628 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">176273 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicControlsTestClass</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicControl</span>
+                <span class="method-start">181219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">189297 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">190433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDynamicLoading</span>
+                <span class="method-start">199458 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">211791 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">213032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEntryAd</span>
+                <span class="method-start">222274 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">223553 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">224680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateFileDownload</span>
+                <span class="method-start">233777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">234487 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">235699 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateABTest</span>
+                <span class="method-start">245045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">245532 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
