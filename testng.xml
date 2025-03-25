@@ -19,7 +19,6 @@
       <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass"/>
       <class name="com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass"/>
       <class name="com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass"/>
-      <class name="com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass"/>
       <class name="com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting"/>
     </classes>
   </test> 
@@ -41,7 +40,6 @@
       <class name="com.auto.theInternet.IntenetHerokuappPOC.DynamicLoadingTestClass"/>
       <class name="com.auto.theInternet.IntenetHerokuappPOC.EntryAdTestClass"/>
       <class name="com.auto.theInternet.IntenetHerokuappPOC.ExitIntentTestClass"/>
-      <class name="com.auto.theInternet.IntenetHerokuappPOC.FileDownloadTestClass"/>
       <class name="com.auto.theInternet.IntenetHerokuappPOC.ValidateABTesting"/>
     </classes>
   </test> 

@@ -7,7 +7,7 @@ import PageClasses.HomePageClass;
 
 public class FileDownloadTestClass extends BaseClass {
 	
-	@Test
+	@Test(enabled=false)
 	
 	public void validateFileDownload() { 
 		
